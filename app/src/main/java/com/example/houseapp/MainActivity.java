@@ -106,19 +106,21 @@ public class MainActivity extends AppCompatActivity {
             }
             textView.setText("");//Reset text view
             double totalSqFt = 0;
+            //The url has to have an https:// at the front
+            //My sample url docs are at https://web.njit.edu/~jbj8/Sample2.txt and Sample.txt respectively.
             for (int i = 0; i < 3; i++) {
                 textView.append(houseList[i].getAddress().concat("\n"));
                 textView.append(houseList[i].getCity().concat("\n"));
                 textView.append(houseList[i].getLotnum().concat("\n"));
-                textView.append(String.format(Locale.US, "%f3",houseList[i].getPtax()).concat("\n"));
-                textView.append(String.format(Locale.US, "%f3", houseList[i].getPrice()).concat("\n"));
+                textView.append(String.format(Locale.US, "%.2f",houseList[i].getPtax()).concat("\n"));
+                textView.append(String.format(Locale.US, "%.2f", houseList[i].getPrice()).concat("\n"));
                 textView.append(String.valueOf(houseList[i].getSqfoot()).concat("\n"));
                 totalSqFt += houseList[i].getSqfoot();
             }
             double avgSqFt = totalSqFt/3;
             double weightedPtax = ((houseList[0].getSqfoot() * houseList[0].getPtax()) + (houseList[1].getSqfoot() * houseList[1].getPtax()) + (houseList[2].getSqfoot() * houseList[2].getPtax()) ) / totalSqFt;
-            textView.append("Average Square Feet: " + String.format(Locale.US, "%f3",avgSqFt) + "\n");
-            textView.append("This is the weighted property tax: " + String.format(Locale.US, "%f2",weightedPtax));
+            textView.append("Average Square Feet: " + String.format(Locale.US, "%.3f",avgSqFt) + "\n");
+            textView.append("This is the weighted property tax: " + String.format(Locale.US, "%.2f",weightedPtax));
 
 
 
