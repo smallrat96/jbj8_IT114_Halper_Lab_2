@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">House App</string>
+    <string name="edit_file">Enter URL of file</string>
+    <string name="button_display">Display Houses</string>
+    <string name="text_main">Houses will be displayed here.</string>
+    <string name="action_favorite" />
+    <string name="action_settings" />
+</resources>
