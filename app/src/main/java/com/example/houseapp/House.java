@@ -1,5 +1,7 @@
 package com.example.houseapp;
 
+import java.util.Date;
+
 public class House {
     private String address;
     private String city;
@@ -8,6 +10,21 @@ public class House {
     private float ptax;
     private float sqfoot;
 
+    private int yearBuilt;
+
+
+    public float getTaxExclusion(float proptax){
+        if (proptax > 10000) {
+            return proptax - 10000;
+        }
+        else {
+            return 0;
+        }
+
+    }
+    public int getAge() {
+        return DateUtil.get_current_year() - yearBuilt;
+    }
     public String getAddress() {
         return address;
     }
@@ -57,5 +74,12 @@ public class House {
     }
 
 
+    public int getYearBuilt() {
+        return yearBuilt;
+    }
+
+    public void setYearBuilt(int yearBuilt) {
+        this.yearBuilt = yearBuilt;
+    }
 }
 

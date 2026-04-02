@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
 
-    <item
-        android:id="@+id/action_settings"
-        android:title="Settings"
-        app:showAsAction="never" />
+    <!-- Template for jbj8 Item Options
+    <item android:title="@string/opt#"
+            app:showAsAction="never"
+            android:onClick="onOption#"
+            android:id="@+id/opt#"/>
 
-    <item
-        android:id="@+id/action_about"
-        android:title="About"
-        app:showAsAction="never" />
+    -->
+    <item android:title="@string/opt1"
+        app:showAsAction="never"
+        android:onClick="onOption1"
+        android:id="@+id/opt1"/>
+
+    <item android:title="@string/opt2"
+        app:showAsAction="never"
+        android:onClick="onOption2"
+        android:id="@+id/opt2"/>
+
+    <item android:title="@string/opt3"
+        app:showAsAction="never"
+        android:onClick="onOption3"
+        android:id="@+id/opt3"/>
+
+    <item android:title="@string/opt4"
+        app:showAsAction="never"
+        android:onClick="onOption4"
+        android:id="@+id/opt4"/>
+
+    <item android:title="@string/opt5"
+        app:showAsAction="never"
+        android:onClick="onOption5"
+        android:id="@+id/opt5"/>
+
+    <item android:title="@string/opt6"
+        app:showAsAction="never"
+        android:onClick="onOption6"
+        android:id="@+id/opt6"/>
+
+    <item android:title="@string/opt7"
+        app:showAsAction="never"
+        android:onClick="onOption7"
+        android:id="@+id/opt7"/>
+
 </menu>

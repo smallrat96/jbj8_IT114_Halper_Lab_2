@@ -19,13 +19,13 @@
 
     <EditText android:id="@+id/edit_file"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="@string/edit_file" />
+        android:layout_height="50dp" />
 
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:onClick="displayHouses"
+        android:onClick="buttonPressed"
         android:text="@string/button_display" />
 
     <!-- Spacing and horizontal rule (line) to separate Button from TextView -->
